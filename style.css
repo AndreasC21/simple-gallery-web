@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 20px;
+  color: #cbe3ff;
+  font-family: "Plus Jakarta Sans", serif;
+  background-color: #1e2835;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0px 200px 0;
+}
+
+header::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("https://plus.unsplash.com/premium_photo-1666700698920-d2d2bba589f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  opacity: 0.2;
+}
+
+header h1 {
+  position: relative;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 80px;
+}
+
+header span {
+  position: relative;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  margin: 8px 8px 0 8px;
+  transition: 1s ease-out;
+}
+
+.sq img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.rt img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.image img {
+  transition: 1s ease-out;
+  border-radius: 10px;
+}
+
+.text {
+  background-color: #1b3755;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  opacity: 0;
+  padding: 5px;
+  font-size: 12px;
+  transition: 1s ease-out;
+}
+
+bold {
+  font-weight: 600;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+.image:hover img {
+  transition: 1s ease;
+  opacity: 1;
+}
+
+.image:hover .text {
+  transition: 1s ease;
+  opacity: 1;
+}
+
+#shore2 img {
+  object-position: 0 15%;
+}
+
+footer {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sq img {
+    width: 350px;
+    height: 150px;
+  }
+
+  .rt img {
+    width: 350px;
+    height: 150px;
+  }
+
+  .text {
+    font-size: 0.4rem;
+  }
+}
